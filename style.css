@@ -1,0 +1,56 @@
+body 
+{
+  margin:0;
+  background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt912826400bb9b504/6308459c47fdc2115dced822/cloud-2600.jpg?format=webply&quality=90);
+  font-family: sans-serif;
+}
+.row
+{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  width: 80vw;
+  margin: 7vh auto 0 auto;
+  justify-content: center;
+}
+.row h2
+{
+  text-transform: uppercase;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.hero
+{
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+}
+.hero img
+{
+  width: clamp(100px, 30vw, 210px);
+}
+.hero h2::before
+{
+  content:"";
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+.tanque h2::before
+{
+  background-image: url(https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg);
+}
+.dano h2::before
+{
+  background-image: url(https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg);
+}
+.suporte h2::before
+{
+  background-image: url(https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg);
+}
+
